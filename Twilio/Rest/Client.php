@@ -78,6 +78,7 @@ class Client {
     protected $username;
     protected $password;
     protected $accountSid;
+    protected $region;
     protected $httpClient;
     protected $_account;
     protected $_api = null;
@@ -101,10 +102,11 @@ class Client {
      * @param \Twilio\Http\Client $httpClient HttpClient, defaults to CurlClient
      * @param mixed[] $environment Environment to look for auth details, defaults
      *                             to $_ENV
+     * @param string $region Twilio region to make requests
      * @return \Twilio\Rest\Client Twilio Client
      * @throws ConfigurationException If valid authentication is not present
      */
-    public function __construct($username = null, $password = null, $accountSid = null, HttpClient $httpClient = null, $environment = null) {
+    public function __construct($username = null, $password = null, $accountSid = null, HttpClient $httpClient = null, $environment = null, $region = null) {
         if (!$environment) {
             $environment = $_ENV;
         }
@@ -136,6 +138,8 @@ class Client {
         } else {
             $this->httpClient = new CurlClient();
         }
+
+        $this->region = $region;
     }
 
     /**
@@ -167,7 +171,15 @@ class Client {
         if (!array_key_exists('Accept', $headers)) {
             $headers['Accept'] = 'application/json';
         }
-        
+
+        if ($this->region) {
+            $parts = explode('.', $uri);
+            $uri = join('.', array_merge(
+                array($parts[0], $this->region),
+                array_slice($parts, 1)
+            ));
+        }
+
         return $this->getHttpClient()->request(
             $method,
             $uri,
@@ -205,6 +217,26 @@ class Client {
      */
     public function setHttpClient(HttpClient $httpClient) {
         $this->httpClient = $httpClient;
+    }
+
+    /**
+     * Retrieve the Region
+     *
+     * @return null|string Current region
+     */
+    public function getRegion()
+    {
+        return $this->region;
+    }
+
+    /**
+     * Set the Region
+     *
+     * @param null|string $region Region to use
+     */
+    public function setRegion($region)
+    {
+        $this->region = $region;
     }
 
     /**
