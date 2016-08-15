@@ -200,36 +200,6 @@
 							</li>
 								</ul></li>
 					<li class="main">
-						<a href="namespace-Twilio.Rest.Notifications.html">
-							Notifications<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="namespace-Twilio.Rest.Notifications.V1.html">
-							V1<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="namespace-Twilio.Rest.Notifications.V1.Service.html">
-							Service						</a>
-							</li>
-								</ul></li></ul></li>
-					<li class="main">
-						<a href="namespace-Twilio.Rest.Preview.html">
-							Preview<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="namespace-Twilio.Rest.Preview.Wireless.html">
-							Wireless<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="namespace-Twilio.Rest.Preview.Wireless.Device.html">
-							Device						</a>
-							</li>
-								</ul></li></ul></li>
-					<li class="main">
 						<a href="namespace-Twilio.Rest.Pricing.html">
 							Pricing<span></span>
 						</a>
@@ -316,8 +286,6 @@
 				<li><a href="class-Twilio.Rest.IpMessaging.html">IpMessaging</a></li>
 				<li><a href="class-Twilio.Rest.Lookups.html">Lookups</a></li>
 				<li><a href="class-Twilio.Rest.Monitor.html">Monitor</a></li>
-				<li><a href="class-Twilio.Rest.Notifications.html">Notifications</a></li>
-				<li><a href="class-Twilio.Rest.Preview.html">Preview</a></li>
 				<li><a href="class-Twilio.Rest.Pricing.html">Pricing</a></li>
 				<li><a href="class-Twilio.Rest.Taskrouter.html">Taskrouter</a></li>
 				<li><a href="class-Twilio.Rest.Trunking.html">Trunking</a></li>
@@ -357,7 +325,7 @@
 		<b>Namespace:</b> <a href="namespace-Twilio.html">Twilio</a>\<a href="namespace-Twilio.Rest.html">Rest</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Twilio.Rest.Client.html#18-678" title="Go to source code">Twilio/Rest/Client.php</a>
+			<b>Located at</b> <a href="source-class-Twilio.Rest.Client.html#18-703" title="Go to source code">Twilio/Rest/Client.php</a>
 		<br>
 	</div>
 
@@ -377,7 +345,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#94-139" title="Go to source code">__construct</a>( <span>string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$password</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$accountSid</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Twilio.Http.Client.html">Twilio\Http\Client</a></code> <var>$httpClient</var> = <span class="php-keyword1">null</span></span>, <span>mixed[] <var>$environment</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#93-141" title="Go to source code">__construct</a>( <span>string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$password</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$accountSid</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$region</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Twilio.Http.Client.html">Twilio\Http\Client</a></code> <var>$httpClient</var> = <span class="php-keyword1">null</span></span>, <span>mixed[] <var>$environment</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>Initializes the Twilio Client</p>
@@ -396,6 +364,9 @@
 						<dt><var>$accountSid</var></dt>
 						<dd><p>Account Sid to authenticate with, defaults to
                           $username</p></dd>
+						<dt><var>$region</var></dt>
+						<dd><p>Region to send requests to, defaults to no region
+                      selection</p></dd>
 						<dt><var>$httpClient</var></dt>
 						<dd>HttpClient, defaults to CurlClient</dd>
 						<dt><var>$environment</var></dt>
@@ -429,7 +400,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_request">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#141-181" title="Go to source code">request</a>( <span>string <var>$method</var></span>, <span>string <var>$uri</var></span>, <span>string[] <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span>string[] <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>string[] <var>$headers</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$password</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$timeout</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#143-188" title="Go to source code">request</a>( <span>string <var>$method</var></span>, <span>string <var>$uri</var></span>, <span>string[] <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span>string[] <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>string[] <var>$headers</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$password</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$timeout</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>Makes a request to the Twilio API using the configured http client
@@ -472,6 +443,72 @@ Authentication information is automatically added if none is provided</p>
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="getUsername" id="_getUsername">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getUsername">#</a>
+			<code><a href="source-class-Twilio.Rest.Client.html#190-197" title="Go to source code">getUsername</a>( )</code>
+
+			<div class="description short">
+				<p>Retrieve the Username</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Retrieve the Username</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>Current Username
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPassword" id="_getPassword">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPassword">#</a>
+			<code><a href="source-class-Twilio.Rest.Client.html#199-206" title="Go to source code">getPassword</a>( )</code>
+
+			<div class="description short">
+				<p>Retrieve the Password</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Retrieve the Password</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>Current Password
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="getAccountSid" id="_getAccountSid">
 
 			<td class="attributes"><code>
@@ -483,7 +520,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getAccountSid">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#183-190" title="Go to source code">getAccountSid</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#208-215" title="Go to source code">getAccountSid</a>( )</code>
 
 			<div class="description short">
 				<p>Retrieve the AccountSid</p>
@@ -505,6 +542,39 @@ Authentication information is automatically added if none is provided</p>
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="getRegion" id="_getRegion">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getRegion">#</a>
+			<code><a href="source-class-Twilio.Rest.Client.html#217-224" title="Go to source code">getRegion</a>( )</code>
+
+			<div class="description short">
+				<p>Retrieve the Region</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Retrieve the Region</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>Current Region
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="getHttpClient" id="_getHttpClient">
 
 			<td class="attributes"><code>
@@ -516,7 +586,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getHttpClient">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#192-199" title="Go to source code">getHttpClient</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#226-233" title="Go to source code">getHttpClient</a>( )</code>
 
 			<div class="description short">
 				<p>Retrieve the HttpClient</p>
@@ -549,7 +619,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setHttpClient">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#201-208" title="Go to source code">setHttpClient</a>( <span><code><a href="class-Twilio.Http.Client.html">Twilio\Http\Client</a></code> <var>$httpClient</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#235-242" title="Go to source code">setHttpClient</a>( <span><code><a href="class-Twilio.Http.Client.html">Twilio\Http\Client</a></code> <var>$httpClient</var></span> )</code>
 
 			<div class="description short">
 				<p>Set the HttpClient</p>
@@ -583,7 +653,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getApi">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#210-220" title="Go to source code">getApi</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#244-254" title="Go to source code">getApi</a>( )</code>
 
 			<div class="description short">
 				<p>Access the Api Twilio Domain</p>
@@ -616,7 +686,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getAccount">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#222-228" title="Go to source code">getAccount</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#256-262" title="Go to source code">getAccount</a>( )</code>
 
 			<div class="description short">
 				
@@ -650,7 +720,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getAccounts">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#230-235" title="Go to source code">getAccounts</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#264-269" title="Go to source code">getAccounts</a>( )</code>
 
 			<div class="description short">
 				
@@ -683,7 +753,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextAccounts">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#237-243" title="Go to source code">contextAccounts</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#271-277" title="Go to source code">contextAccounts</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -721,7 +791,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getAddresses">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#245-250" title="Go to source code">getAddresses</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#279-284" title="Go to source code">getAddresses</a>( )</code>
 
 			<div class="description short">
 				
@@ -754,7 +824,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextAddresses">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#252-258" title="Go to source code">contextAddresses</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#286-292" title="Go to source code">contextAddresses</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -792,7 +862,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getApplications">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#260-265" title="Go to source code">getApplications</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#294-299" title="Go to source code">getApplications</a>( )</code>
 
 			<div class="description short">
 				
@@ -825,7 +895,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextApplications">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#267-273" title="Go to source code">contextApplications</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#301-307" title="Go to source code">contextApplications</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -863,7 +933,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getAuthorizedConnectApps">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#275-280" title="Go to source code">getAuthorizedConnectApps</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#309-314" title="Go to source code">getAuthorizedConnectApps</a>( )</code>
 
 			<div class="description short">
 				
@@ -896,7 +966,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextAuthorizedConnectApps">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#282-288" title="Go to source code">contextAuthorizedConnectApps</a>( <span>string <var>$connectAppSid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#316-322" title="Go to source code">contextAuthorizedConnectApps</a>( <span>string <var>$connectAppSid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -934,7 +1004,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getAvailablePhoneNumbers">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#290-295" title="Go to source code">getAvailablePhoneNumbers</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#324-329" title="Go to source code">getAvailablePhoneNumbers</a>( )</code>
 
 			<div class="description short">
 				
@@ -967,7 +1037,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextAvailablePhoneNumbers">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#297-303" title="Go to source code">contextAvailablePhoneNumbers</a>( <span>string <var>$countryCode</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#331-337" title="Go to source code">contextAvailablePhoneNumbers</a>( <span>string <var>$countryCode</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1005,7 +1075,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getCalls">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#305-310" title="Go to source code">getCalls</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#339-344" title="Go to source code">getCalls</a>( )</code>
 
 			<div class="description short">
 				
@@ -1038,7 +1108,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextCalls">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#312-318" title="Go to source code">contextCalls</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#346-352" title="Go to source code">contextCalls</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1076,7 +1146,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getConferences">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#320-325" title="Go to source code">getConferences</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#354-359" title="Go to source code">getConferences</a>( )</code>
 
 			<div class="description short">
 				
@@ -1109,7 +1179,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextConferences">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#327-333" title="Go to source code">contextConferences</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#361-367" title="Go to source code">contextConferences</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1147,7 +1217,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getConnectApps">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#335-340" title="Go to source code">getConnectApps</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#369-374" title="Go to source code">getConnectApps</a>( )</code>
 
 			<div class="description short">
 				
@@ -1180,7 +1250,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextConnectApps">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#342-348" title="Go to source code">contextConnectApps</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#376-382" title="Go to source code">contextConnectApps</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1218,7 +1288,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getIncomingPhoneNumbers">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#350-355" title="Go to source code">getIncomingPhoneNumbers</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#384-389" title="Go to source code">getIncomingPhoneNumbers</a>( )</code>
 
 			<div class="description short">
 				
@@ -1251,7 +1321,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextIncomingPhoneNumbers">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#357-363" title="Go to source code">contextIncomingPhoneNumbers</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#391-397" title="Go to source code">contextIncomingPhoneNumbers</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1289,7 +1359,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getKeys">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#365-370" title="Go to source code">getKeys</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#399-404" title="Go to source code">getKeys</a>( )</code>
 
 			<div class="description short">
 				
@@ -1322,7 +1392,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextKeys">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#372-378" title="Go to source code">contextKeys</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#406-412" title="Go to source code">contextKeys</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1360,7 +1430,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getMessages">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#380-385" title="Go to source code">getMessages</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#414-419" title="Go to source code">getMessages</a>( )</code>
 
 			<div class="description short">
 				
@@ -1393,7 +1463,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextMessages">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#387-393" title="Go to source code">contextMessages</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#421-427" title="Go to source code">contextMessages</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1431,7 +1501,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getNewKeys">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#395-400" title="Go to source code">getNewKeys</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#429-434" title="Go to source code">getNewKeys</a>( )</code>
 
 			<div class="description short">
 				
@@ -1464,7 +1534,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getNewSigningKeys">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#402-407" title="Go to source code">getNewSigningKeys</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#436-441" title="Go to source code">getNewSigningKeys</a>( )</code>
 
 			<div class="description short">
 				
@@ -1486,6 +1556,77 @@ Authentication information is automatically added if none is provided</p>
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="getNotifications" id="_getNotifications">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-Twilio.Rest.Api.V2010.Account.NotificationList.html">Twilio\Rest\Api\V2010\Account\NotificationList</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getNotifications">#</a>
+			<code><a href="source-class-Twilio.Rest.Client.html#443-448" title="Go to source code">getNotifications</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Twilio.Rest.Api.V2010.Account.NotificationList.html">Twilio\Rest\Api\V2010\Account\NotificationList</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="contextNotifications" id="_contextNotifications">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-Twilio.Rest.Api.V2010.Account.NotificationContext.html">Twilio\Rest\Api\V2010\Account\NotificationContext</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_contextNotifications">#</a>
+			<code><a href="source-class-Twilio.Rest.Client.html#450-456" title="Go to source code">contextNotifications</a>( <span>string <var>$sid</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sid</var></dt>
+						<dd>Fetch by unique notification Sid</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Twilio.Rest.Api.V2010.Account.NotificationContext.html">Twilio\Rest\Api\V2010\Account\NotificationContext</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="getOutgoingCallerIds" id="_getOutgoingCallerIds">
 
 			<td class="attributes"><code>
@@ -1497,7 +1638,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getOutgoingCallerIds">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#409-414" title="Go to source code">getOutgoingCallerIds</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#458-463" title="Go to source code">getOutgoingCallerIds</a>( )</code>
 
 			<div class="description short">
 				
@@ -1530,7 +1671,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextOutgoingCallerIds">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#416-422" title="Go to source code">contextOutgoingCallerIds</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#465-471" title="Go to source code">contextOutgoingCallerIds</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1568,7 +1709,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getQueues">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#424-429" title="Go to source code">getQueues</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#473-478" title="Go to source code">getQueues</a>( )</code>
 
 			<div class="description short">
 				
@@ -1601,7 +1742,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextQueues">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#431-437" title="Go to source code">contextQueues</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#480-486" title="Go to source code">contextQueues</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1639,7 +1780,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getRecordings">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#439-444" title="Go to source code">getRecordings</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#488-493" title="Go to source code">getRecordings</a>( )</code>
 
 			<div class="description short">
 				
@@ -1672,7 +1813,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextRecordings">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#446-452" title="Go to source code">contextRecordings</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#495-501" title="Go to source code">contextRecordings</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1710,7 +1851,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getSandbox">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#454-459" title="Go to source code">getSandbox</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#503-508" title="Go to source code">getSandbox</a>( )</code>
 
 			<div class="description short">
 				
@@ -1743,7 +1884,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextSandbox">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#461-466" title="Go to source code">contextSandbox</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#510-515" title="Go to source code">contextSandbox</a>( )</code>
 
 			<div class="description short">
 				
@@ -1776,7 +1917,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getSigningKeys">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#468-473" title="Go to source code">getSigningKeys</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#517-522" title="Go to source code">getSigningKeys</a>( )</code>
 
 			<div class="description short">
 				
@@ -1809,7 +1950,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextSigningKeys">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#475-481" title="Go to source code">contextSigningKeys</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#524-530" title="Go to source code">contextSigningKeys</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1847,7 +1988,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getSip">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#483-488" title="Go to source code">getSip</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#532-537" title="Go to source code">getSip</a>( )</code>
 
 			<div class="description short">
 				
@@ -1880,7 +2021,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getShortCodes">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#490-495" title="Go to source code">getShortCodes</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#539-544" title="Go to source code">getShortCodes</a>( )</code>
 
 			<div class="description short">
 				
@@ -1913,7 +2054,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextShortCodes">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#497-503" title="Go to source code">contextShortCodes</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#546-552" title="Go to source code">contextShortCodes</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1951,7 +2092,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getTokens">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#505-510" title="Go to source code">getTokens</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#554-559" title="Go to source code">getTokens</a>( )</code>
 
 			<div class="description short">
 				
@@ -1984,7 +2125,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getTranscriptions">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#512-517" title="Go to source code">getTranscriptions</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#561-566" title="Go to source code">getTranscriptions</a>( )</code>
 
 			<div class="description short">
 				
@@ -2017,7 +2158,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contextTranscriptions">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#519-525" title="Go to source code">contextTranscriptions</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#568-574" title="Go to source code">contextTranscriptions</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2055,7 +2196,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getUsage">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#527-532" title="Go to source code">getUsage</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#576-581" title="Go to source code">getUsage</a>( )</code>
 
 			<div class="description short">
 				
@@ -2088,7 +2229,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getValidationRequests">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#534-539" title="Go to source code">getValidationRequests</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#583-588" title="Go to source code">getValidationRequests</a>( )</code>
 
 			<div class="description short">
 				
@@ -2121,7 +2262,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getIpMessaging">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#541-551" title="Go to source code">getIpMessaging</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#590-600" title="Go to source code">getIpMessaging</a>( )</code>
 
 			<div class="description short">
 				<p>Access the IpMessaging Twilio Domain</p>
@@ -2154,7 +2295,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getLookups">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#553-563" title="Go to source code">getLookups</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#602-612" title="Go to source code">getLookups</a>( )</code>
 
 			<div class="description short">
 				<p>Access the Lookups Twilio Domain</p>
@@ -2187,7 +2328,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getMonitor">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#565-575" title="Go to source code">getMonitor</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#614-624" title="Go to source code">getMonitor</a>( )</code>
 
 			<div class="description short">
 				<p>Access the Monitor Twilio Domain</p>
@@ -2209,72 +2350,6 @@ Authentication information is automatically added if none is provided</p>
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="getNotifications" id="_getNotifications">
-
-			<td class="attributes"><code>
-				 protected 
-				<code><a href="class-Twilio.Rest.Notifications.html">Twilio\Rest\Notifications</a></code>
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_getNotifications">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#577-587" title="Go to source code">getNotifications</a>( )</code>
-
-			<div class="description short">
-				<p>Access the Notifications Twilio Domain</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>Access the Notifications Twilio Domain</p>
-
-
-
-					<h4>Returns</h4>
-					<div class="list">
-						<code><a href="class-Twilio.Rest.Notifications.html">Twilio\Rest\Notifications</a></code><br>Notifications Twilio Domain
-					</div>
-
-
-
-
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="getPreview" id="_getPreview">
-
-			<td class="attributes"><code>
-				 protected 
-				<code><a href="class-Twilio.Rest.Preview.html">Twilio\Rest\Preview</a></code>
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_getPreview">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#589-599" title="Go to source code">getPreview</a>( )</code>
-
-			<div class="description short">
-				<p>Access the Preview Twilio Domain</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>Access the Preview Twilio Domain</p>
-
-
-
-					<h4>Returns</h4>
-					<div class="list">
-						<code><a href="class-Twilio.Rest.Preview.html">Twilio\Rest\Preview</a></code><br>Preview Twilio Domain
-					</div>
-
-
-
-
-			</div>
-			</div></td>
-		</tr>
 		<tr data-order="getPricing" id="_getPricing">
 
 			<td class="attributes"><code>
@@ -2286,7 +2361,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPricing">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#601-611" title="Go to source code">getPricing</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#626-636" title="Go to source code">getPricing</a>( )</code>
 
 			<div class="description short">
 				<p>Access the Pricing Twilio Domain</p>
@@ -2319,7 +2394,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getTaskrouter">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#613-623" title="Go to source code">getTaskrouter</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#638-648" title="Go to source code">getTaskrouter</a>( )</code>
 
 			<div class="description short">
 				<p>Access the Taskrouter Twilio Domain</p>
@@ -2352,7 +2427,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getTrunking">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#625-635" title="Go to source code">getTrunking</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#650-660" title="Go to source code">getTrunking</a>( )</code>
 
 			<div class="description short">
 				<p>Access the Trunking Twilio Domain</p>
@@ -2385,7 +2460,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#637-651" title="Go to source code">__get</a>( <span>string <var>$name</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#662-676" title="Go to source code">__get</a>( <span>string <var>$name</var></span> )</code>
 
 			<div class="description short">
 				<p>Magic getter to lazy load domains</p>
@@ -2427,7 +2502,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___call">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#653-668" title="Go to source code">__call</a>( <span>string <var>$name</var></span>, <span>mixed[] <var>$arguments</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#678-693" title="Go to source code">__call</a>( <span>string <var>$name</var></span>, <span>mixed[] <var>$arguments</var></span> )</code>
 
 			<div class="description short">
 				<p>Magic call to lazy load contexts</p>
@@ -2471,7 +2546,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#670-677" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#695-702" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				<p>Provide a friendly representation</p>
@@ -2512,7 +2587,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_accounts">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#55" title="Go to source code">accounts</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#54" title="Go to source code">accounts</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2550,7 +2625,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_addresses">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#56" title="Go to source code">addresses</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#55" title="Go to source code">addresses</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2588,7 +2663,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_applications">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#57" title="Go to source code">applications</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#56" title="Go to source code">applications</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2626,7 +2701,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_authorizedConnectApps">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#58" title="Go to source code">authorizedConnectApps</a>( <span>string <var>$connectAppSid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#57" title="Go to source code">authorizedConnectApps</a>( <span>string <var>$connectAppSid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2664,7 +2739,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_availablePhoneNumbers">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#59" title="Go to source code">availablePhoneNumbers</a>( <span>string <var>$countryCode</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#58" title="Go to source code">availablePhoneNumbers</a>( <span>string <var>$countryCode</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2702,7 +2777,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_calls">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#60" title="Go to source code">calls</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#59" title="Go to source code">calls</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2740,7 +2815,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_conferences">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#61" title="Go to source code">conferences</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#60" title="Go to source code">conferences</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2778,7 +2853,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_connectApps">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#62" title="Go to source code">connectApps</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#61" title="Go to source code">connectApps</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2816,7 +2891,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_incomingPhoneNumbers">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#63" title="Go to source code">incomingPhoneNumbers</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#62" title="Go to source code">incomingPhoneNumbers</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2854,7 +2929,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_keys">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#64" title="Go to source code">keys</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#63" title="Go to source code">keys</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2892,7 +2967,7 @@ Authentication information is automatically added if none is provided</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#m_messages">#</a>
-			<code><a href="source-class-Twilio.Rest.Client.html#65" title="Go to source code">messages</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Client.html#64" title="Go to source code">messages</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2911,6 +2986,44 @@ Authentication information is automatically added if none is provided</p>
 					<h4>Returns</h4>
 					<div class="list">
 						<code><a href="class-Twilio.Rest.Api.V2010.Account.MessageContext.html">Twilio\Rest\Api\V2010\Account\MessageContext</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="notifications" id="m_notifications">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Twilio.Rest.Api.V2010.Account.NotificationContext.html">Twilio\Rest\Api\V2010\Account\NotificationContext</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#m_notifications">#</a>
+			<code><a href="source-class-Twilio.Rest.Client.html#65" title="Go to source code">notifications</a>( <span>string <var>$sid</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sid</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Twilio.Rest.Api.V2010.Account.NotificationContext.html">Twilio\Rest\Api\V2010\Account\NotificationContext</a></code>
 					</div>
 
 
@@ -3322,6 +3435,31 @@ Authentication information is automatically added if none is provided</p>
 				</div>
 			</td>
 		</tr>
+		<tr data-order="region" id="$region">
+			<td class="attributes"><code>
+				protected  
+				
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Twilio.Rest.Client.html#81" title="Go to source code"><var>$region</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$region" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
 		<tr data-order="httpClient" id="$httpClient">
 			<td class="attributes"><code>
 				protected  
@@ -3329,7 +3467,7 @@ Authentication information is automatically added if none is provided</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#81" title="Go to source code"><var>$httpClient</var></a>
+					<a href="source-class-Twilio.Rest.Client.html#82" title="Go to source code"><var>$httpClient</var></a>
 
 				<div class="description short">
 					
@@ -3354,7 +3492,7 @@ Authentication information is automatically added if none is provided</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#82" title="Go to source code"><var>$_account</var></a>
+					<a href="source-class-Twilio.Rest.Client.html#83" title="Go to source code"><var>$_account</var></a>
 
 				<div class="description short">
 					
@@ -3379,7 +3517,7 @@ Authentication information is automatically added if none is provided</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#83" title="Go to source code"><var>$_api</var></a>
+					<a href="source-class-Twilio.Rest.Client.html#84" title="Go to source code"><var>$_api</var></a>
 
 				<div class="description short">
 					
@@ -3404,7 +3542,7 @@ Authentication information is automatically added if none is provided</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#84" title="Go to source code"><var>$_ipMessaging</var></a>
+					<a href="source-class-Twilio.Rest.Client.html#85" title="Go to source code"><var>$_ipMessaging</var></a>
 
 				<div class="description short">
 					
@@ -3429,7 +3567,7 @@ Authentication information is automatically added if none is provided</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#85" title="Go to source code"><var>$_lookups</var></a>
+					<a href="source-class-Twilio.Rest.Client.html#86" title="Go to source code"><var>$_lookups</var></a>
 
 				<div class="description short">
 					
@@ -3454,7 +3592,7 @@ Authentication information is automatically added if none is provided</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#86" title="Go to source code"><var>$_monitor</var></a>
+					<a href="source-class-Twilio.Rest.Client.html#87" title="Go to source code"><var>$_monitor</var></a>
 
 				<div class="description short">
 					
@@ -3472,56 +3610,6 @@ Authentication information is automatically added if none is provided</p>
 				</div>
 			</td>
 		</tr>
-		<tr data-order="_notifications" id="$_notifications">
-			<td class="attributes"><code>
-				protected  
-				
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#87" title="Go to source code"><var>$_notifications</var></a>
-
-				<div class="description short">
-					
-				</div>
-
-				<div class="description detailed hidden">
-					
-
-				</div>
-			</td>
-			<td class="value">
-				<div>
-					<a href="#$_notifications" class="anchor">#</a>
-					<code><span class="php-keyword1">null</span></code>
-				</div>
-			</td>
-		</tr>
-		<tr data-order="_preview" id="$_preview">
-			<td class="attributes"><code>
-				protected  
-				
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#88" title="Go to source code"><var>$_preview</var></a>
-
-				<div class="description short">
-					
-				</div>
-
-				<div class="description detailed hidden">
-					
-
-				</div>
-			</td>
-			<td class="value">
-				<div>
-					<a href="#$_preview" class="anchor">#</a>
-					<code><span class="php-keyword1">null</span></code>
-				</div>
-			</td>
-		</tr>
 		<tr data-order="_pricing" id="$_pricing">
 			<td class="attributes"><code>
 				protected  
@@ -3529,7 +3617,7 @@ Authentication information is automatically added if none is provided</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#89" title="Go to source code"><var>$_pricing</var></a>
+					<a href="source-class-Twilio.Rest.Client.html#88" title="Go to source code"><var>$_pricing</var></a>
 
 				<div class="description short">
 					
@@ -3554,7 +3642,7 @@ Authentication information is automatically added if none is provided</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#90" title="Go to source code"><var>$_taskrouter</var></a>
+					<a href="source-class-Twilio.Rest.Client.html#89" title="Go to source code"><var>$_taskrouter</var></a>
 
 				<div class="description short">
 					
@@ -3579,7 +3667,7 @@ Authentication information is automatically added if none is provided</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#91" title="Go to source code"><var>$_trunking</var></a>
+					<a href="source-class-Twilio.Rest.Client.html#90" title="Go to source code"><var>$_trunking</var></a>
 
 				<div class="description short">
 					
@@ -3604,7 +3692,7 @@ Authentication information is automatically added if none is provided</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Twilio.Rest.Client.html#92" title="Go to source code"><var>$_accounts</var></a>
+					<a href="source-class-Twilio.Rest.Client.html#91" title="Go to source code"><var>$_accounts</var></a>
 
 				<div class="description short">
 					

@@ -200,36 +200,6 @@
 							</li>
 								</ul></li>
 					<li class="main">
-						<a href="namespace-Twilio.Rest.Notifications.html">
-							Notifications<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="namespace-Twilio.Rest.Notifications.V1.html">
-							V1<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="namespace-Twilio.Rest.Notifications.V1.Service.html">
-							Service						</a>
-							</li>
-								</ul></li></ul></li>
-					<li class="main">
-						<a href="namespace-Twilio.Rest.Preview.html">
-							Preview<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="namespace-Twilio.Rest.Preview.Wireless.html">
-							Wireless<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="namespace-Twilio.Rest.Preview.Wireless.Device.html">
-							Device						</a>
-							</li>
-								</ul></li></ul></li>
-					<li class="main">
 						<a href="namespace-Twilio.Rest.Pricing.html">
 							Pricing<span></span>
 						</a>
@@ -365,7 +335,7 @@
 		<b>Namespace:</b> <a href="namespace-Twilio.html">Twilio</a>\<a href="namespace-Twilio.Rest.html">Rest</a>\<a href="namespace-Twilio.Rest.Api.html">Api</a>\<a href="namespace-Twilio.Rest.Api.V2010.html">V2010</a>\<a href="namespace-Twilio.Rest.Api.V2010.Account.html">Account</a>\<a href="namespace-Twilio.Rest.Api.V2010.Account.Usage.html">Usage</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#25-304" title="Go to source code">Twilio/Rest/Api/V2010/Account/Usage/RecordList.php</a>
+			<b>Located at</b> <a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#25-298" title="Go to source code">Twilio/Rest/Api/V2010/Account/Usage/RecordList.php</a>
 		<br>
 	</div>
 
@@ -428,7 +398,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_stream">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#64-92" title="Go to source code">stream</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#64-89" title="Go to source code">stream</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>Streams RecordInstance records from the API as a generator stream.
@@ -458,13 +428,10 @@ efficient.</p>
                   limit</p></dd>
 						<dt><var>$pageSize</var></dt>
 						<dd><p>Number of records to fetch per request, when not set
-                       will use
-                       the default value of 50 records.  If no page_size is
-                       defined
-                       but a limit is defined, stream() will attempt to read
-                       the limit
-                       with the most efficient page size, i.e. min(limit,
-                       1000)</p></dd>
+                       will use the default value of 50 records.  If no
+                       page_size is defined but a limit is defined, stream()
+                       will attempt to read the limit with the most
+                       efficient page size, i.e. min(limit, 1000)</p></dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -489,7 +456,7 @@ efficient.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_read">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#94-115" title="Go to source code">read</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Api\V2010\Account\Usage\Values::NONE</span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#91-109" title="Go to source code">read</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Api\V2010\Account\Usage\Values::NONE</span> )</code>
 
 			<div class="description short">
 				<p>Reads RecordInstance records from the API as a list.
@@ -513,13 +480,10 @@ memory before returning.</p>
                   limit</p></dd>
 						<dt><var>$pageSize</var></dt>
 						<dd><p>Number of records to fetch per request, when not set
-                       will use
-                       the default value of 50 records.  If no page_size is
-                       defined
-                       but a limit is defined, read() will attempt to read
-                       the
-                       limit with the most efficient page size, i.e.
-                       min(limit, 1000)</p></dd>
+                       will use the default value of 50 records.  If no
+                       page_size is defined but a limit is defined, read()
+                       will attempt to read the limit with the most
+                       efficient page size, i.e. min(limit, 1000)</p></dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -544,7 +508,7 @@ memory before returning.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_page">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#117-149" title="Go to source code">page</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Api\V2010\Account\Usage\Values::NONE</span>, <span>string <var>$pageToken</var> = Twilio\Rest\Api\V2010\Account\Usage\Values::NONE</span>, <span>mixed <var>$pageNumber</var> = Twilio\Rest\Api\V2010\Account\Usage\Values::NONE</span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#111-143" title="Go to source code">page</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Api\V2010\Account\Usage\Values::NONE</span>, <span>string <var>$pageToken</var> = Twilio\Rest\Api\V2010\Account\Usage\Values::NONE</span>, <span>mixed <var>$pageNumber</var> = Twilio\Rest\Api\V2010\Account\Usage\Values::NONE</span> )</code>
 
 			<div class="description short">
 				<p>Retrieve a single page of RecordInstance records from the API.
@@ -590,7 +554,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getAllTime">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#151-163" title="Go to source code">getAllTime</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#145-157" title="Go to source code">getAllTime</a>( )</code>
 
 			<div class="description short">
 				<p>Access the allTime</p>
@@ -619,7 +583,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getDaily">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#165-177" title="Go to source code">getDaily</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#159-171" title="Go to source code">getDaily</a>( )</code>
 
 			<div class="description short">
 				<p>Access the daily</p>
@@ -648,7 +612,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getLastMonth">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#179-191" title="Go to source code">getLastMonth</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#173-185" title="Go to source code">getLastMonth</a>( )</code>
 
 			<div class="description short">
 				<p>Access the lastMonth</p>
@@ -677,7 +641,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getMonthly">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#193-205" title="Go to source code">getMonthly</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#187-199" title="Go to source code">getMonthly</a>( )</code>
 
 			<div class="description short">
 				<p>Access the monthly</p>
@@ -706,7 +670,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getThisMonth">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#207-219" title="Go to source code">getThisMonth</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#201-213" title="Go to source code">getThisMonth</a>( )</code>
 
 			<div class="description short">
 				<p>Access the thisMonth</p>
@@ -735,7 +699,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getToday">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#221-233" title="Go to source code">getToday</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#215-227" title="Go to source code">getToday</a>( )</code>
 
 			<div class="description short">
 				<p>Access the today</p>
@@ -764,7 +728,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getYearly">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#235-247" title="Go to source code">getYearly</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#229-241" title="Go to source code">getYearly</a>( )</code>
 
 			<div class="description short">
 				<p>Access the yearly</p>
@@ -793,7 +757,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getYesterday">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#249-261" title="Go to source code">getYesterday</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#243-255" title="Go to source code">getYesterday</a>( )</code>
 
 			<div class="description short">
 				<p>Access the yesterday</p>
@@ -822,7 +786,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#263-277" title="Go to source code">__get</a>( <span>string <var>$name</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#257-271" title="Go to source code">__get</a>( <span>string <var>$name</var></span> )</code>
 
 			<div class="description short">
 				<p>Magic getter to lazy load subresources</p>
@@ -864,7 +828,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___call">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#279-294" title="Go to source code">__call</a>( <span>string <var>$name</var></span>, <span>array <var>$arguments</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#273-288" title="Go to source code">__call</a>( <span>string <var>$name</var></span>, <span>array <var>$arguments</var></span> )</code>
 
 			<div class="description short">
 				<p>Magic caller to get resource contexts</p>
@@ -908,7 +872,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#296-303" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Usage.RecordList.html#290-297" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				<p>Provide a friendly representation</p>
