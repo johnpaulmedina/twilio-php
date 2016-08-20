@@ -284,11 +284,15 @@
 				<li><a href="class-Twilio.Rest.Monitor.V1.AlertContext.html">AlertContext</a></li>
 				<li><a href="class-Twilio.Rest.Monitor.V1.AlertInstance.html">AlertInstance</a></li>
 				<li><a href="class-Twilio.Rest.Monitor.V1.AlertList.html">AlertList</a></li>
+				<li><a href="class-Twilio.Rest.Monitor.V1.AlertOptions.html">AlertOptions</a></li>
 				<li><a href="class-Twilio.Rest.Monitor.V1.AlertPage.html">AlertPage</a></li>
 				<li><a href="class-Twilio.Rest.Monitor.V1.EventContext.html">EventContext</a></li>
 				<li><a href="class-Twilio.Rest.Monitor.V1.EventInstance.html">EventInstance</a></li>
 				<li class="active"><a href="class-Twilio.Rest.Monitor.V1.EventList.html">EventList</a></li>
+				<li><a href="class-Twilio.Rest.Monitor.V1.EventOptions.html">EventOptions</a></li>
 				<li><a href="class-Twilio.Rest.Monitor.V1.EventPage.html">EventPage</a></li>
+				<li><a href="class-Twilio.Rest.Monitor.V1.ReadAlertOptions.html">ReadAlertOptions</a></li>
+				<li><a href="class-Twilio.Rest.Monitor.V1.ReadEventOptions.html">ReadEventOptions</a></li>
 			</ul>
 
 
@@ -336,7 +340,7 @@
 		<b>Namespace:</b> <a href="namespace-Twilio.html">Twilio</a>\<a href="namespace-Twilio.Rest.html">Rest</a>\<a href="namespace-Twilio.Rest.Monitor.html">Monitor</a>\<a href="namespace-Twilio.Rest.Monitor.V1.html">V1</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#16-137" title="Go to source code">Twilio/Rest/Monitor/V1/EventList.php</a>
+			<b>Located at</b> <a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#17-138" title="Go to source code">Twilio/Rest/Monitor/V1/EventList.php</a>
 		<br>
 	</div>
 
@@ -356,7 +360,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#17-30" title="Go to source code">__construct</a>( <span><code><a href="class-Twilio.Version.html">Twilio\Version</a></code> <var>$version</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#18-31" title="Go to source code">__construct</a>( <span><code><a href="class-Twilio.Version.html">Twilio\Version</a></code> <var>$version</var></span> )</code>
 
 			<div class="description short">
 				<p>Construct the EventList</p>
@@ -396,7 +400,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_stream">#</a>
-			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#32-57" title="Go to source code">stream</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#33-58" title="Go to source code">stream</a>( <span>array|<code><a href="class-Twilio.Options.html">Twilio\Options</a></code> <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>Streams EventInstance records from the API as a generator stream.
@@ -454,7 +458,7 @@ efficient.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_read">#</a>
-			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#59-77" title="Go to source code">read</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Monitor\V1\Values::NONE</span> )</code>
+			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#60-78" title="Go to source code">read</a>( <span>array|<code><a href="class-Twilio.Options.html">Twilio\Options</a></code> <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Monitor\V1\Values::NONE</span> )</code>
 
 			<div class="description short">
 				<p>Reads EventInstance records from the API as a list.
@@ -506,7 +510,7 @@ memory before returning.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_page">#</a>
-			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#79-114" title="Go to source code">page</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Monitor\V1\Values::NONE</span>, <span>string <var>$pageToken</var> = Twilio\Rest\Monitor\V1\Values::NONE</span>, <span>mixed <var>$pageNumber</var> = Twilio\Rest\Monitor\V1\Values::NONE</span> )</code>
+			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#80-115" title="Go to source code">page</a>( <span>array|<code><a href="class-Twilio.Options.html">Twilio\Options</a></code> <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Monitor\V1\Values::NONE</span>, <span>string <var>$pageToken</var> = Twilio\Rest\Monitor\V1\Values::NONE</span>, <span>mixed <var>$pageNumber</var> = Twilio\Rest\Monitor\V1\Values::NONE</span> )</code>
 
 			<div class="description short">
 				<p>Retrieve a single page of EventInstance records from the API.
@@ -552,7 +556,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getContext">#</a>
-			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#116-127" title="Go to source code">getContext</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#117-128" title="Go to source code">getContext</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				<p>Constructs a EventContext</p>
@@ -590,7 +594,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#129-136" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Monitor.V1.EventList.html#130-137" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				<p>Provide a friendly representation</p>

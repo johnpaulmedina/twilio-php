@@ -284,7 +284,11 @@
 				<li><a href="class-Twilio.Rest.Api.V2010.AccountContext.html">AccountContext</a></li>
 				<li><a href="class-Twilio.Rest.Api.V2010.AccountInstance.html">AccountInstance</a></li>
 				<li class="active"><a href="class-Twilio.Rest.Api.V2010.AccountList.html">AccountList</a></li>
+				<li><a href="class-Twilio.Rest.Api.V2010.AccountOptions.html">AccountOptions</a></li>
 				<li><a href="class-Twilio.Rest.Api.V2010.AccountPage.html">AccountPage</a></li>
+				<li><a href="class-Twilio.Rest.Api.V2010.CreateAccountOptions.html">CreateAccountOptions</a></li>
+				<li><a href="class-Twilio.Rest.Api.V2010.ReadAccountOptions.html">ReadAccountOptions</a></li>
+				<li><a href="class-Twilio.Rest.Api.V2010.UpdateAccountOptions.html">UpdateAccountOptions</a></li>
 			</ul>
 
 
@@ -332,7 +336,7 @@
 		<b>Namespace:</b> <a href="namespace-Twilio.html">Twilio</a>\<a href="namespace-Twilio.Rest.html">Rest</a>\<a href="namespace-Twilio.Rest.Api.html">Api</a>\<a href="namespace-Twilio.Rest.Api.V2010.html">V2010</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#16-155" title="Go to source code">Twilio/Rest/Api/V2010/AccountList.php</a>
+			<b>Located at</b> <a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#17-156" title="Go to source code">Twilio/Rest/Api/V2010/AccountList.php</a>
 		<br>
 	</div>
 
@@ -352,7 +356,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#17-30" title="Go to source code">__construct</a>( <span><code><a href="class-Twilio.Version.html">Twilio\Version</a></code> <var>$version</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#18-31" title="Go to source code">__construct</a>( <span><code><a href="class-Twilio.Version.html">Twilio\Version</a></code> <var>$version</var></span> )</code>
 
 			<div class="description short">
 				<p>Construct the AccountList</p>
@@ -392,7 +396,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_create">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#32-56" title="Go to source code">create</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#33-57" title="Go to source code">create</a>( <span>array|<code><a href="class-Twilio.Options.html">Twilio\Options</a></code> <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				<p>Create a new AccountInstance</p>
@@ -430,7 +434,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_stream">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#58-83" title="Go to source code">stream</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#59-84" title="Go to source code">stream</a>( <span>array|<code><a href="class-Twilio.Options.html">Twilio\Options</a></code> <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>Streams AccountInstance records from the API as a generator stream.
@@ -488,7 +492,7 @@ efficient.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_read">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#85-103" title="Go to source code">read</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Api\V2010\Values::NONE</span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#86-104" title="Go to source code">read</a>( <span>array|<code><a href="class-Twilio.Options.html">Twilio\Options</a></code> <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Api\V2010\Values::NONE</span> )</code>
 
 			<div class="description short">
 				<p>Reads AccountInstance records from the API as a list.
@@ -540,7 +544,7 @@ memory before returning.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_page">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#105-132" title="Go to source code">page</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Api\V2010\Values::NONE</span>, <span>string <var>$pageToken</var> = Twilio\Rest\Api\V2010\Values::NONE</span>, <span>mixed <var>$pageNumber</var> = Twilio\Rest\Api\V2010\Values::NONE</span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#106-133" title="Go to source code">page</a>( <span>array|<code><a href="class-Twilio.Options.html">Twilio\Options</a></code> <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\Api\V2010\Values::NONE</span>, <span>string <var>$pageToken</var> = Twilio\Rest\Api\V2010\Values::NONE</span>, <span>mixed <var>$pageNumber</var> = Twilio\Rest\Api\V2010\Values::NONE</span> )</code>
 
 			<div class="description short">
 				<p>Retrieve a single page of AccountInstance records from the API.
@@ -586,7 +590,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getContext">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#134-145" title="Go to source code">getContext</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#135-146" title="Go to source code">getContext</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				<p>Constructs a AccountContext</p>
@@ -624,7 +628,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#147-154" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.AccountList.html#148-155" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				<p>Provide a friendly representation</p>
