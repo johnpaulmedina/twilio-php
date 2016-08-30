@@ -159,6 +159,26 @@
 							Record						</a>
 							</li>
 								</ul></li></ul></li></ul></li></ul></li>
+					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.html">
+							Chat<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.V1.html">
+							V1<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.V1.Service.html">
+							Service<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.V1.Service.Channel.html">
+							Channel						</a>
+							</li>
+								</ul></li></ul></li></ul></li>
 					<li class="active main">
 						<a href="namespace-Twilio.Rest.IpMessaging.html">
 							IpMessaging<span></span>
@@ -284,14 +304,20 @@
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.ChannelContext.html">ChannelContext</a></li>
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.ChannelInstance.html">ChannelInstance</a></li>
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.ChannelList.html">ChannelList</a></li>
+				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.ChannelOptions.html">ChannelOptions</a></li>
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.ChannelPage.html">ChannelPage</a></li>
+				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.CreateChannelOptions.html">CreateChannelOptions</a></li>
+				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.CreateUserOptions.html">CreateUserOptions</a></li>
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.RoleContext.html">RoleContext</a></li>
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.RoleInstance.html">RoleInstance</a></li>
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.RoleList.html">RoleList</a></li>
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.RolePage.html">RolePage</a></li>
+				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.UpdateChannelOptions.html">UpdateChannelOptions</a></li>
+				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.UpdateUserOptions.html">UpdateUserOptions</a></li>
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.UserContext.html">UserContext</a></li>
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.UserInstance.html">UserInstance</a></li>
 				<li class="active"><a href="class-Twilio.Rest.IpMessaging.V1.Service.UserList.html">UserList</a></li>
+				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.UserOptions.html">UserOptions</a></li>
 				<li><a href="class-Twilio.Rest.IpMessaging.V1.Service.UserPage.html">UserPage</a></li>
 			</ul>
 
@@ -340,7 +366,7 @@
 		<b>Namespace:</b> <a href="namespace-Twilio.html">Twilio</a>\<a href="namespace-Twilio.Rest.html">Rest</a>\<a href="namespace-Twilio.Rest.IpMessaging.html">IpMessaging</a>\<a href="namespace-Twilio.Rest.IpMessaging.V1.html">V1</a>\<a href="namespace-Twilio.Rest.IpMessaging.V1.Service.html">Service</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#16-154" title="Go to source code">Twilio/Rest/IpMessaging/V1/Service/UserList.php</a>
+			<b>Located at</b> <a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#17-159" title="Go to source code">Twilio/Rest/IpMessaging/V1/Service/UserList.php</a>
 		<br>
 	</div>
 
@@ -360,7 +386,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#17-33" title="Go to source code">__construct</a>( <span><code><a href="class-Twilio.Version.html">Twilio\Version</a></code> <var>$version</var></span>, <span>string <var>$serviceSid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#18-34" title="Go to source code">__construct</a>( <span><code><a href="class-Twilio.Version.html">Twilio\Version</a></code> <var>$version</var></span>, <span>string <var>$serviceSid</var></span> )</code>
 
 			<div class="description short">
 				<p>Construct the UserList</p>
@@ -402,7 +428,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_create">#</a>
-			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#35-60" title="Go to source code">create</a>( <span>string <var>$identity</var></span>, <span>string <var>$roleSid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#36-65" title="Go to source code">create</a>( <span>string <var>$identity</var></span>, <span>array|<code><a href="class-Twilio.Options.html">Twilio\Options</a></code> <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				<p>Create a new UserInstance</p>
@@ -416,8 +442,8 @@
 					<div class="list"><dl>
 						<dt><var>$identity</var></dt>
 						<dd>The identity</dd>
-						<dt><var>$roleSid</var></dt>
-						<dd>The role_sid</dd>
+						<dt><var>$options</var></dt>
+						<dd>Optional Arguments</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -442,7 +468,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_stream">#</a>
-			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#62-86" title="Go to source code">stream</a>( <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#67-91" title="Go to source code">stream</a>( <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>Streams UserInstance records from the API as a generator stream.
@@ -498,7 +524,7 @@ efficient.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_read">#</a>
-			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#88-105" title="Go to source code">read</a>( <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\IpMessaging\V1\Service\Values::NONE</span> )</code>
+			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#93-110" title="Go to source code">read</a>( <span>integer <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$pageSize</var> = Twilio\Rest\IpMessaging\V1\Service\Values::NONE</span> )</code>
 
 			<div class="description short">
 				<p>Reads UserInstance records from the API as a list.
@@ -548,7 +574,7 @@ memory before returning.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_page">#</a>
-			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#107-130" title="Go to source code">page</a>( <span>mixed <var>$pageSize</var> = Twilio\Rest\IpMessaging\V1\Service\Values::NONE</span>, <span>string <var>$pageToken</var> = Twilio\Rest\IpMessaging\V1\Service\Values::NONE</span>, <span>mixed <var>$pageNumber</var> = Twilio\Rest\IpMessaging\V1\Service\Values::NONE</span> )</code>
+			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#112-135" title="Go to source code">page</a>( <span>mixed <var>$pageSize</var> = Twilio\Rest\IpMessaging\V1\Service\Values::NONE</span>, <span>string <var>$pageToken</var> = Twilio\Rest\IpMessaging\V1\Service\Values::NONE</span>, <span>mixed <var>$pageNumber</var> = Twilio\Rest\IpMessaging\V1\Service\Values::NONE</span> )</code>
 
 			<div class="description short">
 				<p>Retrieve a single page of UserInstance records from the API.
@@ -592,7 +618,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getContext">#</a>
-			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#132-144" title="Go to source code">getContext</a>( <span>string <var>$sid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#137-149" title="Go to source code">getContext</a>( <span>string <var>$sid</var></span> )</code>
 
 			<div class="description short">
 				<p>Constructs a UserContext</p>
@@ -630,7 +656,7 @@ Request is executed immediately</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#146-153" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.IpMessaging.V1.Service.UserList.html#151-158" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				<p>Provide a friendly representation</p>
