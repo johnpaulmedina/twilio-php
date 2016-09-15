@@ -160,6 +160,26 @@
 							</li>
 								</ul></li></ul></li></ul></li></ul></li>
 					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.html">
+							Chat<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.V1.html">
+							V1<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.V1.Service.html">
+							Service<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.V1.Service.Channel.html">
+							Channel						</a>
+							</li>
+								</ul></li></ul></li></ul></li>
+					<li class="main">
 						<a href="namespace-Twilio.Rest.IpMessaging.html">
 							IpMessaging<span></span>
 						</a>
@@ -338,7 +358,7 @@
 		<b>Namespace:</b> <a href="namespace-Twilio.html">Twilio</a>\<a href="namespace-Twilio.Rest.html">Rest</a>\<a href="namespace-Twilio.Rest.Taskrouter.html">Taskrouter</a>\<a href="namespace-Twilio.Rest.Taskrouter.V1.html">V1</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#45-117" title="Go to source code">Twilio/Rest/Taskrouter/V1/WorkspaceOptions.php</a>
+			<b>Located at</b> <a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#49-147" title="Go to source code">Twilio/Rest/Taskrouter/V1/WorkspaceOptions.php</a>
 		<br>
 	</div>
 
@@ -358,7 +378,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#46-57" title="Go to source code">__construct</a>( <span>string <var>$defaultActivitySid</var> = Twilio\Rest\Taskrouter\V1\Values::NONE</span>, <span>string <var>$eventCallbackUrl</var> = Twilio\Rest\Taskrouter\V1\Values::NONE</span>, <span>string <var>$friendlyName</var> = Twilio\Rest\Taskrouter\V1\Values::NONE</span>, <span>string <var>$timeoutActivitySid</var> = Twilio\Rest\Taskrouter\V1\Values::NONE</span> )</code>
+			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#50-65" title="Go to source code">__construct</a>( <span>string <var>$defaultActivitySid</var> = Twilio\Rest\Taskrouter\V1\Values::NONE</span>, <span>string <var>$eventCallbackUrl</var> = Twilio\Rest\Taskrouter\V1\Values::NONE</span>, <span>string <var>$eventsFilter</var> = Twilio\Rest\Taskrouter\V1\Values::NONE</span>, <span>string <var>$friendlyName</var> = Twilio\Rest\Taskrouter\V1\Values::NONE</span>, <span>string <var>$multiTaskEnabled</var> = Twilio\Rest\Taskrouter\V1\Values::NONE</span>, <span>string <var>$timeoutActivitySid</var> = Twilio\Rest\Taskrouter\V1\Values::NONE</span> )</code>
 
 			<div class="description short">
 				
@@ -374,8 +394,12 @@
 						<dd>The default_activity_sid</dd>
 						<dt><var>$eventCallbackUrl</var></dt>
 						<dd>The event_callback_url</dd>
+						<dt><var>$eventsFilter</var></dt>
+						<dd>The events_filter</dd>
 						<dt><var>$friendlyName</var></dt>
 						<dd>The friendly_name</dd>
+						<dt><var>$multiTaskEnabled</var></dt>
+						<dd>The multi_task_enabled</dd>
 						<dt><var>$timeoutActivitySid</var></dt>
 						<dd>The timeout_activity_sid</dd>
 					</dl></div>
@@ -398,7 +422,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setDefaultActivitySid">#</a>
-			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#59-68" title="Go to source code">setDefaultActivitySid</a>( <span>string <var>$defaultActivitySid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#67-76" title="Go to source code">setDefaultActivitySid</a>( <span>string <var>$defaultActivitySid</var></span> )</code>
 
 			<div class="description short">
 				<p>The default_activity_sid</p>
@@ -436,7 +460,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setEventCallbackUrl">#</a>
-			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#70-79" title="Go to source code">setEventCallbackUrl</a>( <span>string <var>$eventCallbackUrl</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#78-87" title="Go to source code">setEventCallbackUrl</a>( <span>string <var>$eventCallbackUrl</var></span> )</code>
 
 			<div class="description short">
 				<p>The event_callback_url</p>
@@ -463,6 +487,44 @@
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="setEventsFilter" id="_setEventsFilter">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setEventsFilter">#</a>
+			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#89-98" title="Go to source code">setEventsFilter</a>( <span>string <var>$eventsFilter</var></span> )</code>
+
+			<div class="description short">
+				<p>The events_filter</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The events_filter</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$eventsFilter</var></dt>
+						<dd>The events_filter</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this Fluent Builder
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="setFriendlyName" id="_setFriendlyName">
 
 			<td class="attributes"><code>
@@ -474,7 +536,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setFriendlyName">#</a>
-			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#81-90" title="Go to source code">setFriendlyName</a>( <span>string <var>$friendlyName</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#100-109" title="Go to source code">setFriendlyName</a>( <span>string <var>$friendlyName</var></span> )</code>
 
 			<div class="description short">
 				<p>The friendly_name</p>
@@ -501,6 +563,44 @@
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="setMultiTaskEnabled" id="_setMultiTaskEnabled">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setMultiTaskEnabled">#</a>
+			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#111-120" title="Go to source code">setMultiTaskEnabled</a>( <span>string <var>$multiTaskEnabled</var></span> )</code>
+
+			<div class="description short">
+				<p>The multi_task_enabled</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The multi_task_enabled</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$multiTaskEnabled</var></dt>
+						<dd>The multi_task_enabled</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this Fluent Builder
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="setTimeoutActivitySid" id="_setTimeoutActivitySid">
 
 			<td class="attributes"><code>
@@ -512,7 +612,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setTimeoutActivitySid">#</a>
-			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#92-101" title="Go to source code">setTimeoutActivitySid</a>( <span>string <var>$timeoutActivitySid</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#122-131" title="Go to source code">setTimeoutActivitySid</a>( <span>string <var>$timeoutActivitySid</var></span> )</code>
 
 			<div class="description short">
 				<p>The timeout_activity_sid</p>
@@ -550,7 +650,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#103-116" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Taskrouter.V1.UpdateWorkspaceOptions.html#133-146" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				<p>Provide a friendly representation</p>

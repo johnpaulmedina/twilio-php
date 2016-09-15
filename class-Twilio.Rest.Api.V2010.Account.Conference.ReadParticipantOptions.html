@@ -160,6 +160,26 @@
 							</li>
 								</ul></li></ul></li></ul></li></ul></li>
 					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.html">
+							Chat<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.V1.html">
+							V1<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.V1.Service.html">
+							Service<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="namespace-Twilio.Rest.Chat.V1.Service.Channel.html">
+							Channel						</a>
+							</li>
+								</ul></li></ul></li></ul></li>
+					<li class="main">
 						<a href="namespace-Twilio.Rest.IpMessaging.html">
 							IpMessaging<span></span>
 						</a>
@@ -287,6 +307,7 @@
 				<li><a href="class-Twilio.Rest.Api.V2010.Account.Conference.ParticipantOptions.html">ParticipantOptions</a></li>
 				<li><a href="class-Twilio.Rest.Api.V2010.Account.Conference.ParticipantPage.html">ParticipantPage</a></li>
 				<li class="active"><a href="class-Twilio.Rest.Api.V2010.Account.Conference.ReadParticipantOptions.html">ReadParticipantOptions</a></li>
+				<li><a href="class-Twilio.Rest.Api.V2010.Account.Conference.UpdateParticipantOptions.html">UpdateParticipantOptions</a></li>
 			</ul>
 
 
@@ -336,7 +357,7 @@
 		<b>Namespace:</b> <a href="namespace-Twilio.html">Twilio</a>\<a href="namespace-Twilio.Rest.html">Rest</a>\<a href="namespace-Twilio.Rest.Api.html">Api</a>\<a href="namespace-Twilio.Rest.Api.V2010.html">V2010</a>\<a href="namespace-Twilio.Rest.Api.V2010.Account.html">Account</a>\<a href="namespace-Twilio.Rest.Api.V2010.Account.Conference.html">Conference</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Twilio.Rest.Api.V2010.Account.Conference.ReadParticipantOptions.html#25-58" title="Go to source code">Twilio/Rest/Api/V2010/Account/Conference/ParticipantOptions.php</a>
+			<b>Located at</b> <a href="source-class-Twilio.Rest.Api.V2010.Account.Conference.ReadParticipantOptions.html#111-157" title="Go to source code">Twilio/Rest/Api/V2010/Account/Conference/ParticipantOptions.php</a>
 		<br>
 	</div>
 
@@ -356,7 +377,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Conference.ReadParticipantOptions.html#26-31" title="Go to source code">__construct</a>( <span>string <var>$muted</var> = Twilio\Rest\Api\V2010\Account\Conference\Values::NONE</span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Conference.ReadParticipantOptions.html#112-119" title="Go to source code">__construct</a>( <span>string <var>$muted</var> = Twilio\Rest\Api\V2010\Account\Conference\Values::NONE</span>, <span>string <var>$hold</var> = Twilio\Rest\Api\V2010\Account\Conference\Values::NONE</span> )</code>
 
 			<div class="description short">
 				
@@ -370,6 +391,8 @@
 					<div class="list"><dl>
 						<dt><var>$muted</var></dt>
 						<dd>Filter by muted participants</dd>
+						<dt><var>$hold</var></dt>
+						<dd>The hold</dd>
 					</dl></div>
 
 
@@ -390,7 +413,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setMuted">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Conference.ReadParticipantOptions.html#33-42" title="Go to source code">setMuted</a>( <span>string <var>$muted</var></span> )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Conference.ReadParticipantOptions.html#121-130" title="Go to source code">setMuted</a>( <span>string <var>$muted</var></span> )</code>
 
 			<div class="description short">
 				<p>Only show participants that are muted or unmuted</p>
@@ -417,6 +440,44 @@
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="setHold" id="_setHold">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setHold">#</a>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Conference.ReadParticipantOptions.html#132-141" title="Go to source code">setHold</a>( <span>string <var>$hold</var></span> )</code>
+
+			<div class="description short">
+				<p>The hold</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The hold</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$hold</var></dt>
+						<dd>The hold</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this Fluent Builder
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="__toString" id="___toString">
 
 			<td class="attributes"><code>
@@ -428,7 +489,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Conference.ReadParticipantOptions.html#44-57" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Twilio.Rest.Api.V2010.Account.Conference.ReadParticipantOptions.html#143-156" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				<p>Provide a friendly representation</p>
